@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agrinho - Desmatamento</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a4de02 0%, #77b300 100%);
+    color: #1b2b00;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #2f6600;
+    color: #e6f7b9;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 0.04em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  }
+
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 3rem auto 4rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    background-color: #f3ffb3;
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 6px 18px rgba(47,102,0,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(47,102,0,0.5);
+  }
+
+  section h2 {
+    color: #2f6600;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    font-size: 2.2rem;
+    border-bottom: 4px solid #a4de02;
+    padding-bottom: 0.3rem;
+  }
+
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #255700;
+  }
+
+  .facts-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.2rem 0 0 0;
+  }
+
+  .facts-list li {
+    background-color: #d9ff66;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #2f6600;
+    box-shadow: 0 2px 6px rgba(47,102,0,0.15);
+  }
+
+  .facts-list li span.emoji {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    background-color: #2f6600;
+    text-align: center;
+    color: #e6f7b9;
+    padding: 1.2rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+  }
+
+  .call-to-action {
+    background-color: #a4de02;
+    color: #184000;
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    border-radius: 14px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(47,102,0,0.4);
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 520px;
+    margin: 2.5rem auto 0 auto;
+  }
+
+  .call-to-action:hover {
+    background-color: #77b300;
+    color: #dfff70;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.4rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+    }
+
+    .call-to-action {
+      font-size: 1.3rem;
+      max-width: 95%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Agrinho 🌱 - Combate ao Desmatamento</h1>
+  <p>Aprendendo sobre a importância das florestas e como preservá-las</p>
+</header>
+<main>
+  <section>
+    <h2>O que é o Agrinho?</h2>
+    <p>
+      O Agrinho é um programa voltado para as crianças, com o objetivo de promover a educação sobre agricultura sustentável, meio ambiente, cidadania e valores. Um dos temas mais importantes que o Agrinho aborda é a preservação das florestas e o combate ao desmatamento, para garantir um futuro saudável para o planeta.
+    </p>
+  </section>
+
+  <section>
+    <h2>Entendendo o Desmatamento</h2>
+    <p>
+      O desmatamento é o processo de remoção ou destruição da vegetação natural de uma área, especialmente das florestas. Ele traz graves consequências ambientais, sociais e econômicas, como a perda da biodiversidade, mudanças climáticas e prejuízos para as comunidades que dependem das florestas.
+    </p>
+  </section>
+
+  <section>
+    <h2>Fatos Importantes sobre o Desmatamento</h2>
+    <ul class="facts-list">
+      <li><span class="emoji">🌳</span> Cerca de 80% das espécies terrestres do planeta vivem nas florestas.</li>
+      <li><span class="emoji">🔥</span> O desmatamento muitas vezes é causado por queimadas ilegais.</li>
+      <li><span class="emoji">🌍</span> A perda de florestas contribui para o aumento do efeito estufa.</li>
+      <li><span class="emoji">👥</span> Comunidades indígenas são diretamente afetadas pelo desmatamento.</li>
+      <li><span class="emoji">💧</span> Florestas influenciam o ciclo da água e a qualidade do solo.</li>
+    </ul>
+  </section>
+
+  <section class="call-to-action" role="button" tabindex="0" onclick="alert('Obrigado por apoiar a preservação das florestas! 🌿')">
+    Seja um Guardião das Florestas! Preserve a Vida.
+  </section>
+</main>
+<footer>
+  &copy; 2024 Agrinho - Educação Ambiental para um Futuro Sustentável
+</footer>
+</body>
+</html>
+
